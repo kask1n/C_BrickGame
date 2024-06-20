@@ -1,0 +1,61 @@
+TODO
+====
+
+### Main task
+
+* [X] src/brick_game/tetris/
+* [X] Library implementing the logic of the tetris game
+* [X] Function that accepts user input
+* [X] Diagram describing the used FSM
+
+* [X] src/gui/cli/
+* [X] Terminal interface using the ncurses library
+* [X] Function that outputs a matrix that describes the current state of the playing field
+* [X] Playing field size: 10 X 20
+
+### Mechanics
+
+* [X] Rotation of pieces
+* [X] Moving pieces horizontally
+* [X] Acceleration of the piece's fall (when the button is pressed, the figure moves all the way down)
+* [X] Display of the next piece
+* [X] Destruction of filled raws
+* [X] End of the game when the top border of the playing field is reached
+* [X] All sorts of pieces shown in the picture must be included in the game
+
+### Buttons
+
+* [X] Start game
+* [X] Pause
+* [X] End game
+* [X] Left arrow - movement of the piece to the left
+* [X] Right arrow - movement of the piece to the right
+* [X] Down arrow - piece falls
+* [X] Up arrow is not used in this game
+* [X] Action (piece rotation)
+
+### Bonus. Scoring and game record
+
+* [X] Scoring (1 row - 100, 2 - 300, 3 - 700, 4 - 1500)
+* [X] Storing maximum points - must be stored in a file
+
+### Bonus. Level mechanics
+
+* [X] Each 600 points = +1 level (boosts the speed at which the pieces move)
+* [X] The maximum number of levels is 10
+
+### Makefile
+
+* [X] make: all, install, uninstall, clean, dvi, dist, test, gcov_report
+* [X] Installation directory can be arbitrary
+
+### Tests
+
+* [X] Unit Tests
+* [X] Leaks MacOS: leaks -atExit -- ./main.out | grep LEAK:
+* [X] Leaks Ubuntu: valgrind --tool=memcheck --leak-check=yes ./main.out
+* [X] Linter
+* [X] MiniVerter
+* [X] gcov >= 80%
+
+<!-- vim: set filetype=markdown: -->

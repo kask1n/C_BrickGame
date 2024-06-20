@@ -1,0 +1,18 @@
+compile_commands.json
+
+.cache/
+
+# GNU Coverage
+*.gcov
+*.gcda
+*.gcno
+
+## LCOV report
+*.lcov_report
+
+## HTML Gen output
+out/
+
+# Editors
+.idea/
+.vscode/
